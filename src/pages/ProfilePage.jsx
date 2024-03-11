@@ -36,16 +36,6 @@ const ProfileCard = () => {
       },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % users.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + users.length) % users.length);
-  };
-
   return (
     <div className="flex flex-col items-center h-screen overflow-y-scroll bg-gray-200">
       {users.map((user, index) => (
