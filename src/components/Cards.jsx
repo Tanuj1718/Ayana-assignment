@@ -5,8 +5,8 @@ import { faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-
 
 const Cards = ({ user }) => {
   return (
-    <div className="flex items-center justify-center bg-gray-200 m-5 min-w-[350px]">
-      <div className="min-w-[350px] min-h-screen mx-auto bg-white p-8 shadow-md rounded-md">
+    <div className="flex items-center justify-center bg-gray-200 m-5 w-full">
+      <div className="w-full h-auto mx-auto bg-white p-8 shadow-md rounded-md">
         <img
           src={user.image}
           alt={`${user.name}'s profile`}
